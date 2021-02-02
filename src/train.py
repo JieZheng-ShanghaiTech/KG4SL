@@ -17,7 +17,7 @@ def train(args, data, string):
     pd.DataFrame(test_data).to_csv('../results/test_data_' + string + '.csv',header=False, index=False)
 
     kf = ShuffleSplit(n_splits=9,test_size=0.2,random_state=43)
-    cross_validation = 0
+    cross_validation = 1
     train_auc_kf_list = []
     train_f1_kf_list = []
     train_aupr_kf_list = []
