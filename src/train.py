@@ -123,12 +123,12 @@ def train(args, data, string):
                 # draw training curve
                 loss_curve.to_csv('../results/loss_curve_' + string +'_' + str(kk) + '.csv', index=0)
 
-                np.savetxt('../results/' + string + '_' + str(best_kk) + '_' + str(best_iteration) + '_train_nodea_emb.csv', (best_train_nodea_emb_list.eval())[args.batch_size:], delimiter='\t')
-                np.savetxt('../results/' + string + '_' + str(best_kk) + '_' + str(best_iteration) + '_train_nodeb_emb.csv', (best_train_nodeb_emb_list.eval())[args.batch_size:], delimiter='\t')
-                np.savetxt('../results/' + string + '_' + str(best_kk) + '_' + str(best_iteration) + '_eval_nodea_emb.csv', (best_eval_nodea_emb_list.eval())[args.batch_size:], delimiter='\t')
-                np.savetxt('../results/' + string + '_' + str(best_kk) + '_' + str(best_iteration) + '_eval_nodeb_emb.csv', (best_eval_nodeb_emb_list.eval())[args.batch_size:], delimiter='\t')
-                np.savetxt('../results/' + string + '_' + str(best_kk) + '_' + str(best_iteration) + '_test_nodea_emb.csv', (best_test_nodea_emb_list.eval())[args.batch_size:], delimiter='\t')
-                np.savetxt('../results/' + string + '_' + str(best_kk) + '_' + str(best_iteration) + '_test_nodeb_emb.csv', (best_test_nodeb_emb_list.eval())[args.batch_size:], delimiter='\t')
+                # np.savetxt('../results/' + string + '_' + str(best_kk) + '_' + str(best_iteration) + '_train_nodea_emb.csv', (best_train_nodea_emb_list.eval())[args.batch_size:], delimiter='\t')
+                # np.savetxt('../results/' + string + '_' + str(best_kk) + '_' + str(best_iteration) + '_train_nodeb_emb.csv', (best_train_nodeb_emb_list.eval())[args.batch_size:], delimiter='\t')
+                # np.savetxt('../results/' + string + '_' + str(best_kk) + '_' + str(best_iteration) + '_eval_nodea_emb.csv', (best_eval_nodea_emb_list.eval())[args.batch_size:], delimiter='\t')
+                # np.savetxt('../results/' + string + '_' + str(best_kk) + '_' + str(best_iteration) + '_eval_nodeb_emb.csv', (best_eval_nodeb_emb_list.eval())[args.batch_size:], delimiter='\t')
+                # np.savetxt('../results/' + string + '_' + str(best_kk) + '_' + str(best_iteration) + '_test_nodea_emb.csv', (best_test_nodea_emb_list.eval())[args.batch_size:], delimiter='\t')
+                # np.savetxt('../results/' + string + '_' + str(best_kk) + '_' + str(best_iteration) + '_test_nodeb_emb.csv', (best_test_nodeb_emb_list.eval())[args.batch_size:], delimiter='\t')
 
                 pd.DataFrame((np.array(best_test_score)).reshape(-1,1)).to_csv('../results/'+string+'_'+str(best_kk)+'_'+str(best_iteration)+'_scores.csv',header=False, index=False)
                 pd.DataFrame((np.array(best_test_score_binary)).reshape(-1,1)).to_csv('../results/'+string+'_'+str(best_kk)+'_'+str(best_iteration)+'_scores_binary.csv',header=False, index=False)
