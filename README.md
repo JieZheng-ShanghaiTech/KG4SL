@@ -14,12 +14,6 @@
         test_data_final_1: dataset used for test
         train_data_final_1_X: dataset used for train
         loss_curve_final_1_X: save the values of losses and three metrics within the increase of epochs
-        final_1_X_X_eval_nodea_emb: nodea embedding in the eval_data
-        final_1_X_X_eval_nodeb_emb: nodeb embedding in the eval_data
-        final_1_X_X_test_nodea_emb: nodea embedding in the test_data
-        final_1_X_X_test_nodeb_emb: nodeb embedding in the test_data
-        final_1_X_X_train_nodeb_emb: nodea embedding in the train_data
-        final_1_X_X_train_nodeb_emb: nodeb embedding in the train_data
         training_curve_final_1_X: training curve curve (It is recommended that you turn off the early stop mechanism while getting the training curve.)
         
         note: 
