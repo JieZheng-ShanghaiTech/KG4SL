@@ -40,3 +40,8 @@
     tensorflow-gpu 1.15.0
     torch 1.1.0
     dgl 0.5.2
+    pandas 1.1.5
+    scikit-learn 0.24.0
+    matplotlib 3.3.3
+    
+    
