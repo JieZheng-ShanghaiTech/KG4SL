@@ -1,7 +1,6 @@
 ﻿# KG4SL
 ## Dataset collection
-    > SL pairs (http://synlethdb.sist.shanghaitech.edu.cn/v2/#/)
-        The data used to train and test the KG4SL is downloaded from a comprehensive database of synthetic lethal gene pairs named SyLethDB (http://synlethdb.sist.shanghaitech.edu.cn/v2/#/). Its latest version includes a set of 36,402 human SL pairs, as well as a knowledge graph (KG) with 11 kinds of entities and 24 kinds of relationships. The details of the data refer to the paper 'KG4SL: Knowledge Graph Neural Network for Synthetic Lethality Prediction in Human Cancers'.
+    The data used to train and test the KG4SL is downloaded from a comprehensive database of synthetic lethal gene pairs named SyLethDB (http://synlethdb.sist.shanghaitech.edu.cn/v2/#/). Its latest version includes a set of 36,402 human SL pairs, as well as a knowledge graph (KG) with 11 kinds of entities and 24 kinds of relationships. The details of the data refer to the paper 'KG4SL: Knowledge Graph Neural Network for Synthetic Lethality Prediction in Human Cancers'.
 ## Files in the folder: 
     > data
         1. input datasets for prepocessing.py
