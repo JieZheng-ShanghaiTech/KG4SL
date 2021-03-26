@@ -157,7 +157,7 @@ for i in range(len(positive_ids), len(positive_ids) + len(positive_ids)):
     human_SL_retain.loc[i] = [neg_u[neg_eids[neg_idx]], neg_v[neg_eids[neg_idx]], 0]
     neg_idx = neg_idx + 1
 
-print('neg_idx; ',neg_idx)
+# print('neg_idx; ',neg_idx)
 
 print("The len of human_sl positive + negative pairs: ", len(human_SL_retain))
 
