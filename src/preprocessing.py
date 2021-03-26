@@ -21,7 +21,7 @@ relation2id = pd.read_csv(relation2id_path)
 human_SL = pd.read_csv(human_sl_path, sep=' ')
 human_SL = human_SL[['gene_a.identifier','gene_b.identifier']]
 
-# /home/shanghaitech/SL_KGNN/data_process_WJ
+print('Read kg:')
 kg = pd.read_csv(kg_path, sep=',')
 
 # kg: relation name -> id
