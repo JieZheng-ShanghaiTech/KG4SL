@@ -48,7 +48,7 @@ for i in kg_delete['type(r)']:
     relation_new.append(relation_map[i])
 kg_delete['type(r)'] = relation_new
 
-print('kg_delete: ')
+print('The first 10 rows of kg: ')
 print(kg_delete[:10])
 #--------------------------------delect the same head-tail/tail-head in kg and Human_SL pair (Optional）----------------------
 index_list = []
@@ -63,14 +63,14 @@ for a in index_list:
     for b in a:
         list_same.append(b)
 
-print('The index of triples in kg for same head-tail/tail-head with Human_SL: ',list_same)
-print('Its length:', len(list_same))
+# print('The index of triples in kg for same head-tail/tail-head with Human_SL: ',list_same)
+print('The length of triples in kg for same head-tail/tail-head with Human_SL:', len(list_same))
 
 kg_delete = kg_delete.drop(kg_delete.index[list_same])  # Drop for kg
 kg_delete = kg_delete.reset_index(drop=True)
 #---------------------------------------------Delect genes that in Huaman_SL but not in kg------------------------------
 
-print('Read Human_SL:')
+print('Read Human_SL matrix:')
 print(human_SL[:10])
 set_gene_a = set(human_SL['gene_a.identifier'])
 set_gene_b = set(human_SL['gene_b.identifier'])
@@ -82,22 +82,23 @@ set_kg = set_IDa | set_IDb
 list_different = list(set_sl - set_kg)  
 print('The human_sl pairs:', len(human_SL))
 print('The human_sl genes:', len(set_sl))
-print('The number of genes in SL pairs not in kg:', len(list_different))
+# print('The number of genes in SL pairs not in kg:', len(list_different))
 row_delete = []  
 for index, row in human_SL.iterrows():
     if(row['gene_a.identifier'] in list_different or row['gene_b.identifier'] in list_different):
         row_delete.append(index)
 # print(row_delete)
-print('The number of rows in Human_SL to delete (not in the kg): ',len(row_delete))
+# print('The number of rows in Human_SL to delete (not in the kg): ',len(row_delete))
 
 human_SL = human_SL.drop(human_SL.index[row_delete])
 print('Human_SL length after deleting rows not in kg:', len(human_SL))
+
 #---------------------------------------------Human_SL reindex---------------------------------------
 set_gene_a = set(human_SL['gene_a.identifier'])
 set_gene_b = set(human_SL['gene_b.identifier'])
 list_all = list(set_gene_a | set_gene_b)
 
-print("The number of genes for reindex: " ,len(list_all))
+# print("The number of genes for reindex: " ,len(list_all))
 
 # reindex
 entity_key = {}  
@@ -110,8 +111,8 @@ for key in entity_key:
     human_SL.loc[human_SL['gene_a.identifier']==key,'gene_a.reindex'] = entity_key[key]
     human_SL.loc[human_SL['gene_b.identifier']==key,'gene_b.reindex'] = entity_key[key]
 
-print('human_sl after single reindex:')
-print(human_SL[:10])
+# print('human_sl after single reindex:')
+# print(human_SL[:10])
 
 human_SL_reindex = human_SL[['gene_a.reindex','gene_b.reindex']]
 human_SL_reindex = human_SL_reindex.astype(int)
@@ -132,7 +133,7 @@ u = torch.tensor(inter_pairs[:,0])
 v = torch.tensor(inter_pairs[:,1])
 g = dgl.graph((u, v))
 # g = dgl.to_bidirected(g)
-print(g)
+# print(g)
 
 len1 = np.max(v.numpy())
 len2 = np.max(u.numpy())
@@ -172,8 +173,8 @@ for key in entity_key_reverse:
 human_SL = human_SL.astype(int)
 human_SL = human_SL[['gene_a.identifier','gene_b.identifier','type']]
 
-print('Human_sl after add nagative samples (origin identifiers):')
-print(human_SL[:10])
+# print('Human_sl after add nagative samples (origin identifiers):')
+# print(human_SL[:10])
 
 #-----------------------------------------------reindex for all entities in Human_SL and kg-----------------------------------------------
 set_IDa = set(kg_delete['ID(a)'])
@@ -198,10 +199,13 @@ for key in entity_key:
     human_SL.loc[human_SL['gene_a.identifier']==key,'gene_a.identifier'] = entity_key[key]
     human_SL.loc[human_SL['gene_b.identifier']==key,'gene_b.identifier'] = entity_key[key]
 
-print('Final ke_delete:')
+# print('Final ke_delete:')
+print('The first 10 rows of kg after preprocessing:')
 print(kg_delete[:10])
-print('The length of final ke_delete:', len(kg_delete))
-print('Final human_sl:')
+# print('The length of final ke_delete:', len(kg_delete))
+print('The length of final kg:', len(kg_delete))
+# print('Final human_sl:')
+print('The first 10 rows of human_sl matrix after preprocessing:')
 print(human_SL[:10])
 
 # entity2id
