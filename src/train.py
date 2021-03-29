@@ -7,6 +7,40 @@ import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
 
+def reindexid2geneName(test_data):
+    entity2id = pd.read_csv('../data/entity2id.txt', sep='\t')
+    entity_dict = {}
+    for index, row in entity2id.iterrows():
+        entity_dict[row['b']] = row['a']
+
+    test_data.columns = ['gene_a', 'gene_b', 'label']
+
+    db_ida = []
+    db_idb = []
+    for index, row in test_data.iterrows():
+        db_ida.append(entity_dict[row['gene_a']])
+        db_idb.append(entity_dict[row['gene_b']])
+    test_data['db_ida'] = db_ida
+    test_data['db_idb'] = db_idb
+
+    dbid2name = pd.read_csv('../data/dbid2name.csv', sep=',', header=0)
+    id2name_dict = {}
+    for index, row in dbid2name.iterrows():
+        id2name_dict[row['_id']] = row['name']
+
+    name_a = []
+    name_b = []
+    for index, row in test_data.iterrows():
+        name_a.append(id2name_dict[row['db_ida']])
+        name_b.append(id2name_dict[row['db_idb']])
+    test_data['name_a'] = name_a
+    test_data['name_b'] = name_b
+
+    col_order = ['gene_a', 'gene_b', 'db_ida', 'db_idb', 'name_a', 'name_b', 'label']
+    test_data = test_data[col_order]
+
+    return test_data
+
 def train(args, data, string):
 
     # data: # n_nodea(0), n_nodeb(1), n_entity(2), n_relation(3), adj_entity(4), adj_relation(5), train_data(6), test_data(7)
