@@ -16,9 +16,13 @@
             sl2id: gene_a_id, gene_b_id, 0/1
             kg2id: head_id, relation_id, tail_id
             entity2id: origin_id, new_id
+        3. input dataset for train.py
+            dbid2name: _id, name
+
     > results
         eval_data_final_1_X: dataset used for validation
         test_data_final_1: dataset used for test
+        test_data_mapping_final_1: dataset uesd for test with gene names
         train_data_final_1_X: dataset used for train
         loss_curve_final_1_X: save the values of losses and three metrics within the increase of epochs
         training_curve_final_1_X: training curve curve (It is recommended that you turn off the early stop mechanism while getting the training curve.)
