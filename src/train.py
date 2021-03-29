@@ -48,7 +48,11 @@ def train(args, data, string):
     adj_entity, adj_relation = data[4], data[5]
 
     test_data = data[7]
+    
+    test_data_mapping = reindexid2geneName(pd.DataFrame(test_data)) # Add gene names
+    
     pd.DataFrame(test_data).to_csv('../results/test_data_' + string + '.csv',header=False, index=False)
+    test_data_mapping.to_csv('../results/test_data_mapping_' + string + '.csv', header=0, index=False)
 
     kf = ShuffleSplit(n_splits=9,test_size=0.2,random_state=43)
     cross_validation = 1
