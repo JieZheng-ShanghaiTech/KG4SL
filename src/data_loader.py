@@ -126,6 +126,6 @@ def construct_adj(args, kg2dict, n_entity):
         adj_entity[entity] = np.array([neighbors[i][0] for i in sampled_indices])
         adj_relation[entity] = np.array([neighbors[i][1] for i in sampled_indices])
 
-    (pd.DataFrame(isolated_point)).to_csv('../results/isolated_point.csv')
+    # (pd.DataFrame(isolated_point)).to_csv('../results/isolated_point.csv')
 
     return adj_entity, adj_relation
