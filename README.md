@@ -49,5 +49,7 @@
     matplotlib 3.3.3
     
     note: You can install all the packages through the command 'pip install -r pip_install.txt'.
-    
+ 
+ ## Supplementary:
+    We've uploaded some additional experiments in supplementray file.
     
