@@ -1,6 +1,6 @@
 ﻿# KG4SL
 Synthetic lethality (SL) is a promising gold mine for the discovery of anti-cancer drug targets.
-KG4SL is a novel graph neural network (GNN)-based model, by incorporating knowledgegraph message-passing into SL prediction. The knowledge graph was constructed using 11 kinds of entities including genes,compounds, diseases, biological processes, and 24 kinds of relationships that could be pertinent to SL. The integrationof knowledge graph can help harness the independence issue and circumvent manual feature engineering by conducting message-passing on the knowledge graph.
+KG4SL is a novel graph neural network (GNN)-based model, by incorporating knowledgegraph message-passing into SL prediction. The knowledge graph was constructed using 11 kinds of entities including genes,compounds, diseases, biological processes, and 24 kinds of relationships that could be pertinent to SL. The integration of knowledge graph can help harness the independence issue and circumvent manual feature engineering by conducting message-passing on the knowledge graph.
 ## Dataset collection
     The data used to train and test the KG4SL is downloaded from a comprehensive database of synthetic lethal gene pairs named SyLethDB (http://synlethdb.sist.shanghaitech.edu.cn/v2/#/). 
     Its latest version includes a set of 36,402 human SL pairs, as well as a knowledge graph (KG) with 11 kinds of entities and 24 kinds of relationships. The details of the data refer to the paper 'KG4SL: Knowledge Graph Neural Network for Synthetic Lethality Prediction in Human Cancers'. 
