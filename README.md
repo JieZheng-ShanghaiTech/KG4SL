@@ -53,7 +53,7 @@ The data used to train and test the KG4SL was downloaded from a comprehensive da
     note: You can install all the packages through the command 'pip install -r pip_install.txt'.
  
  ## Supplementary Files:
- We've uploaded some additional experiments in the [supplementray file](https://github.com/JieZheng-ShanghaiTech/KG4SL/blob/main/Supplementary_materials.pdf).
+ Results of some additional experiments can be found in the [Supplementary Materials](https://github.com/JieZheng-ShanghaiTech/KG4SL/blob/main/Supplementary_materials.pdf).
  
  ## Acknowledgments:
  The code was inspired by [KGNN-LS](https://github.com/hwwang55/KGNN-LS).
