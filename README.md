@@ -2,9 +2,8 @@
 Synthetic lethality (SL) is a promising gold mine for the discovery of anti-cancer drug targets.
 KG4SL is a novel graph neural network (GNN)-based model, by incorporating knowledgegraph message-passing into SL prediction. The knowledge graph was constructed using 11 kinds of entities including genes,compounds, diseases, biological processes, and 24 kinds of relationships that could be pertinent to SL. The integration of knowledge graph can help harness the independence issue and circumvent manual feature engineering by conducting message-passing on the knowledge graph.
 ## Dataset collection
-    The data used to train and test the KG4SL is downloaded from a comprehensive database of synthetic lethal gene pairs named SyLethDB (http://synlethdb.sist.shanghaitech.edu.cn/v2/#/). And the SynLethKG is constructed based on the SyLethDB and Hetionet.
-    Its latest version includes a set of 36,402 human SL pairs, as well as a knowledge graph (KG) with 11 kinds of entities and 24 kinds of relationships. The details of the data refer to the paper 'KG4SL: Knowledge Graph Neural Network for Synthetic Lethality Prediction in Human Cancers'. 
-    Here we listed the information of the SL pairs and knowledge graph.
+The data used to train and test the KG4SL is downloaded from a comprehensive database of synthetic lethal gene pairs named SyLethDB (http://synlethdb.sist.shanghaitech.edu.cn/v2/#/). <font color=#FF0000>And the SynLethKG is constructed based on the SyLethDB and Hetionet.</font> 
+Its latest version includes a set of 36,402 human SL pairs, as well as a knowledge graph (KG) with 11 kinds of entities and 24 kinds of relationships. The details of the data refer to the paper 'KG4SL: Knowledge Graph Neural Network for Synthetic Lethality Prediction in Human Cancers'. Here we listed the information of the SL pairs and knowledge graph.
    ![image](https://github.com/JieZheng-ShanghaiTech/KG4SL/blob/main/table1.png)
    ![image](https://github.com/JieZheng-ShanghaiTech/KG4SL/blob/main/table2.png)
    
@@ -53,9 +52,9 @@ KG4SL is a novel graph neural network (GNN)-based model, by incorporating knowle
     note: You can install all the packages through the command 'pip install -r pip_install.txt'.
  
  ## Supplementary:
-    We've uploaded some additional experiments in supplementray file.
+ We've uploaded some additional experiments in supplementray file.
  ## Acknowledgments:
-   The code is inspired by [KGNN-LS](https://github.com/hwwang55/KGNN-LS).
-   
-   The SynLethKG is provided by [SynLethDB](http://synlethdb.sist.shanghaitech.edu.cn/v2/#/) and [Hetionet](https://github.com/hetio/hetionet).
+ The code is inspired by [KGNN-LS](https://github.com/hwwang55/KGNN-LS).
+ 
+ The SynLethKG is provided by [SynLethDB](http://synlethdb.sist.shanghaitech.edu.cn/v2/#/) and [Hetionet](https://github.com/hetio/hetionet).
     
