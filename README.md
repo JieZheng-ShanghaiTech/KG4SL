@@ -61,7 +61,7 @@ The data used to train and test the KG4SL was downloaded from a comprehensive da
  >[Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems](https://dl.acm.org/doi/abs/10.1145/3292500.3330836)  
  Wang, Hongwei, et al. Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & data mining. 2019.
  
- SynLethKG was provided by [SynLethDB 1.0](http://synlethdb.sist.shanghaitech.edu.cn/), [SynLethDB 2.0](http://synlethdb.sist.shanghaitech.edu.cn/v2/#/) and [Hetionet](https://github.com/hetio/hetionet).
+ SynLethKG was constructed based on [SynLethDB 1.0](http://synlethdb.sist.shanghaitech.edu.cn/), [SynLethDB 2.0](http://synlethdb.sist.shanghaitech.edu.cn/v2/#/) and [Hetionet](https://github.com/hetio/hetionet).
  
  >[SynLethDB: synthetic lethality database toward discovery of selective and sensitive anticancer drug targets](https://academic.oup.com/nar/article/44/D1/D1011/2502617?login=true)  
 Guo, Jing, Hui Liu, and Jie Zheng. Nucleic Acids Research, Vol. 44, Issue D1  (2016): D1011-D1017.
