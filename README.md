@@ -54,4 +54,7 @@ KG4SL is a novel graph neural network (GNN)-based model, by incorporating knowle
  
  ## Supplementary:
     We've uploaded some additional experiments in supplementray file.
+ ## Acknowledgments:
+    The code is inspired by [KGNN-LS](https://github.com/hwwang55/KGNN-LS).
+    The SynLethKG is provided by [SynLethDB]((http://synlethdb.sist.shanghaitech.edu.cn/v2/#/)) and [Hetionet](https://github.com/hetio/hetionet).
     
