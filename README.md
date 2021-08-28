@@ -56,15 +56,15 @@ The data used to train and test the KG4SL is downloaded from a comprehensive dat
  ## Acknowledgments:
  The code is inspired by [KGNN-LS](https://github.com/hwwang55/KGNN-LS).
  
- >[Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems](https://dl.acm.org/doi/abs/10.1145/3292500.3330836)
+ >[Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems](https://dl.acm.org/doi/abs/10.1145/3292500.3330836)  
  Wang, Hongwei, et al. "Knowledge-aware graph neural networks with label smoothness regularization for recommender systems." Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & data mining. 2019.
  
  The SynLethKG is provided by [SynLethDB 1.0](http://synlethdb.sist.shanghaitech.edu.cn/), [SynLethDB 2.0](http://synlethdb.sist.shanghaitech.edu.cn/v2/#/) and [Hetionet](https://github.com/hetio/hetionet).
  
- >[SynLethDB: synthetic lethality database toward discovery of selective and sensitive anticancer drug targets](https://academic.oup.com/nar/article/44/D1/D1011/2502617?login=true) 
+ >[SynLethDB: synthetic lethality database toward discovery of selective and sensitive anticancer drug targets](https://academic.oup.com/nar/article/44/D1/D1011/2502617?login=true)  
 Guo, Jing, Hui Liu, and Jie Zheng. "SynLethDB: synthetic lethality database toward discovery of selective and sensitive anticancer drug targets." Nucleic acids research 44.D1 (2016): D1011-D1017.
 
->[Systematic integration of biomedical knowledge prioritizes drugs for repurposing](https://elifesciences.org/articles/26726)
+>[Systematic integration of biomedical knowledge prioritizes drugs for repurposing](https://elifesciences.org/articles/26726)  
 Himmelstein, Daniel Scott, et al. "Systematic integration of biomedical knowledge prioritizes drugs for repurposing." Elife 6 (2017): e26726.
  
 ## References:
