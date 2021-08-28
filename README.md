@@ -67,7 +67,7 @@ The data used to train and test the KG4SL was downloaded from a comprehensive da
 Guo, Jing, Hui Liu, and Jie Zheng. Nucleic Acids Research, Vol. 44, Issue D1  (2016): D1011-D1017.
 
 >[Systematic integration of biomedical knowledge prioritizes drugs for repurposing](https://elifesciences.org/articles/26726)  
-Himmelstein, Daniel Scott, et al. elife 6 (2017): e26726.
+Himmelstein, Daniel Scott, et al. eLife 6 (2017): e26726.
  
 ## How to cite KG4SL:
 ```
