@@ -3,7 +3,7 @@ Synthetic lethality (SL) is a promising gold mine for the discovery of anti-canc
 KG4SL is a novel graph neural network (GNN)-based model, by incorporating knowledgegraph message-passing into SL prediction. The knowledge graph was constructed using 11 kinds of entities including genes,compounds, diseases, biological processes, and 24 kinds of relationships that could be pertinent to SL. The integration of knowledge graph can help harness the independence issue and circumvent manual feature engineering by conducting message-passing on the knowledge graph.
 
 ## Dataset collection
-The data used to train and test the KG4SL was downloaded from a comprehensive database of synthetic lethal gene pairs named SynLethDB (http://synlethdb.sist.shanghaitech.edu.cn/v2/#/). Its latest version includes a set of 36,402 human SL pairs, as well as a knowledge graph (KG) with 11 kinds of entities and 24 kinds of relationships. And the knowledge graph named SynLethKG that passed message into SL prediction was constructed based on `SynLethDB` and `Hetionet`. For details of the data,  please refer to our paper ['KG4SL: Knowledge Graph Neural Network for Synthetic Lethality Prediction in Human Cancers'](https://academic.oup.com/bioinformatics/article/37/Supplement_1/i418/6319703). Here we listed the information of the SL pairs and knowledge graph.
+The data used to train and test the KG4SL was downloaded from a comprehensive database of synthetic lethal gene pairs named SynLethDB (http://synlethdb.sist.shanghaitech.edu.cn/v2/#/). Its latest version includes a set of 36,402 human SL pairs, as well as a knowledge graph (KG) with 11 kinds of entities and 24 kinds of relationships. And the knowledge graph named SynLethKG that passed message into SL prediction was constructed based on `SynLethDB` and `Hetionet`. For details of the data, please refer to our paper ['KG4SL: Knowledge Graph Neural Network for Synthetic Lethality Prediction in Human Cancers'](https://academic.oup.com/bioinformatics/article/37/Supplement_1/i418/6319703). Here we listed the information of the SL pairs and knowledge graph.
 
    ![image](https://github.com/JieZheng-ShanghaiTech/KG4SL/blob/main/table1.png)
    ![image](https://github.com/JieZheng-ShanghaiTech/KG4SL/blob/main/table2.png)
@@ -29,12 +29,12 @@ The data used to train and test the KG4SL was downloaded from a comprehensive da
         loss_curve_final_1_X: save the values of losses and three metrics within the increase of epochs
         training_curve_final_1_X: training curve curve (It is recommended that you turn off the early stop mechanism while getting the training curve.)
         
-        note: 
+        Note: 
         The first number in the file naming process represents the process of retrieving test data, which is partitioned only once in this article. 
         The second number that appears represents the process of dividing train data and validation data, which is repeated five times in this article. 
         The third number that appears indicates that in n_epoch, the optimal result appears for the X time.
     > src
-        implementations of KG4SL
+        Implementations of KG4SL.
     
 ## Running the code:
     cd src
@@ -50,7 +50,7 @@ The data used to train and test the KG4SL was downloaded from a comprehensive da
     scikit-learn 0.24.0
     matplotlib 3.3.3
     
-    note: You can install all the packages through the command 'pip install -r pip_install.txt'.
+    Note: You can install all required packages through the command 'pip install -r pip_install.txt'.
  
  ## Supplementary Files:
  Results of some additional experiments can be found in the [Supplementary Materials](https://github.com/JieZheng-ShanghaiTech/KG4SL/blob/main/Supplementary_materials.pdf).
