@@ -62,4 +62,35 @@ Its latest version includes a set of 36,402 human SL pairs, as well as a knowled
  The SynLethKG is provided by [SynLethDB 1.0](http://synlethdb.sist.shanghaitech.edu.cn/), [SynLethDB 2.0](http://synlethdb.sist.shanghaitech.edu.cn/v2/#/) and [Hetionet](https://github.com/hetio/hetionet).
  
 For KG4SL emphasizes its model for SL prediction, knowledge graph is as the data source. We are sorry to have overlooked HetioNet in the data collection process before. And we prepare to contact to the editors of Bioinformatics to add the citation for HetioNet.
-
+## References:
+```
+@article{wang2021kg4sl,
+  title={KG4SL: knowledge graph neural network for synthetic lethality prediction in human cancers},
+  author={Wang, Shike and Xu, Fan and Li, Yunyang and Wang, Jie and Zhang, Ke and Liu, Yong and Wu, Min and Zheng, Jie},
+  journal={Bioinformatics},
+  volume={37},
+  number={Supplement\_1},
+  pages={i418--i425},
+  year={2021},
+  publisher={Oxford University Press}
+}
+@article{guo2016synlethdb,
+  title={SynLethDB: synthetic lethality database toward discovery of selective and sensitive anticancer drug targets},
+  author={Guo, Jing and Liu, Hui and Zheng, Jie},
+  journal={Nucleic acids research},
+  volume={44},
+  number={D1},
+  pages={D1011--D1017},
+  year={2016},
+  publisher={Oxford University Press}
+}
+@article{himmelstein2017systematic,
+  title={Systematic integration of biomedical knowledge prioritizes drugs for repurposing},
+  author={Himmelstein, Daniel Scott and Lizee, Antoine and Hessler, Christine and Brueggeman, Leo and Chen, Sabrina L and Hadley, Dexter and Green, Ari and Khankhanian, Pouya and Baranzini, Sergio E},
+  journal={Elife},
+  volume={6},
+  pages={e26726},
+  year={2017},
+  publisher={eLife Sciences Publications Limited}
+}
+```
