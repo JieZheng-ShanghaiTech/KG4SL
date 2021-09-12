@@ -4,7 +4,7 @@ from abc import abstractmethod
 LAYER_IDS = {}
 
 """
-class Aggregator and SumAggregator is similar to http://arxiv.org/abs/1905.04413 and https://dl.acm.org/doi/10.1145/3308558.3313417.
+class Aggregator and SumAggregator refer to http://arxiv.org/abs/1905.04413 and https://dl.acm.org/doi/10.1145/3308558.3313417.
 """
 def get_layer_id(layer_name=''):
     if layer_name not in LAYER_IDS:
