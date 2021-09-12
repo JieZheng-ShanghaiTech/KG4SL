@@ -61,7 +61,7 @@ The data used to train and test the KG4SL was downloaded from a comprehensive da
  >[Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems](https://dl.acm.org/doi/abs/10.1145/3292500.3330836)  
  Wang, Hongwei, et al. Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & data mining. 2019.
  
- >[Knowledge Graph Convolutional Networks for Recommender Systems](https://dl.acm.org/doi/10.1145/3308558.3313417)
+ >[Knowledge Graph Convolutional Networks for Recommender Systems](https://dl.acm.org/doi/10.1145/3308558.3313417) 
  Wang, Hongwei, et al. arXiv preprint arXiv:1904.12575 (2019).
  
  SynLethKG was constructed based on [SynLethDB 1.0](http://synlethdb.sist.shanghaitech.edu.cn/), [SynLethDB 2.0](http://synlethdb.sist.shanghaitech.edu.cn/v2/#/) and [Hetionet](https://github.com/hetio/hetionet).
