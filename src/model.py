@@ -7,7 +7,7 @@ import copy
 import numpy as np
 
 """
-class KG4SL is a modification of http://arxiv.org/abs/1905.04413 and https://dl.acm.org/doi/10.1145/3308558.3313417.
+class KG4SL refers to http://arxiv.org/abs/1905.04413 and https://dl.acm.org/doi/10.1145/3308558.3313417.
 """
 class KG4SL(object):
     def __init__(self, args, n_entity, n_relation, adj_entity, adj_relation):
