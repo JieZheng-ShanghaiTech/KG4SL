@@ -8,7 +8,7 @@ The data used to train and test the KG4SL was downloaded from a comprehensive da
    ![image](https://github.com/JieZheng-ShanghaiTech/KG4SL/blob/main/table1.png)
    ![image](https://github.com/JieZheng-ShanghaiTech/KG4SL/blob/main/table2.png)
 
-Because SynLethDB is continuously updated, if you wish to use the latest version of the data, please download it directly from the [SynLethDB website](https://synlethdb.sist.shanghaitech.edu.cn/#/download).
+Because SynLethDB is continuously updated, if you wish to use the latest version of the data, please download it directly from the [SynLethDB](https://synlethdb.sist.shanghaitech.edu.cn/#/download) website.
    
 ## Files in the folder: 
     > data
